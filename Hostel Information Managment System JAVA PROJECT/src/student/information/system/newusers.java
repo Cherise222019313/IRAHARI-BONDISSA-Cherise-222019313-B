@@ -1,9 +1,7 @@
  package student.information.system;
 
-/**
- *
- * @author HP
- */
+
+
 class newusers {
 
     static void setVisible(boolean b) {
