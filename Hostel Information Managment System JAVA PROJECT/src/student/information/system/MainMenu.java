@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+ 
 package student.information.system;
 import java.awt.Dimension;
 import java.awt.Toolkit;
@@ -23,17 +19,12 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-/**
- *
- * @author Hyrex
- */
+ 
 public class MainMenu extends javax.swing.JFrame {
 Connection conn=null;
 ResultSet rs=null;
 PreparedStatement pst=null;
-    /**
-     * Creates new form MainMenu
-     */
+ 
     public MainMenu() {
       conn=db.java_db();
         design(); 
@@ -159,11 +150,9 @@ PreparedStatement pst=null;
 
         pack();
     }
-// </editor-fold>//GEN-END:initComponents
-
+ 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-                   Login j = new Login();
+                    Login j = new Login();
                    j.setVisible(true);
                    this.dispose();
                    
@@ -206,42 +195,28 @@ PreparedStatement pst=null;
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        
+         
          admin j= new admin();
                    j.setVisible(true);
                   
                    
-    }//GEN-LAST:event_jButton1ActionPerformed
-
+    } 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        // TODO add your handling code here:
-                   Audit_details j = new Audit_details();
+                    Audit_details j = new Audit_details();
                    j.setVisible(true);
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
-
+    }
+    
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        // TODO add your handling code here:
-        
+         
                   users j = new users();
                    j.setVisible(true);
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
-
+    } 
     private void roomActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_roomActionPerformed
-        // TODO add your handling code here:
-        users j = new users ();
+         users j = new users ();
                    j.setVisible(true);
-    }//GEN-LAST:event_roomActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
+    }
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+        
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -258,18 +233,14 @@ PreparedStatement pst=null;
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(MainMenu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
+         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new MainMenu().setVisible(true);
             }
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    private JButton jButton1;
+     private JButton jButton1;
     private JButton jButton3;
     private JButton jButton5;
     private JFormattedTextField jFormattedTextField1;
