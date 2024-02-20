@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+ 
 package student.information.system;
 import javax.swing.JOptionPane;
 import java.awt.*;
@@ -14,17 +10,12 @@ import java.util.GregorianCalendar;
 import javax.swing.*;
 import net.proteanit.sql.DbUtils;
 
-/**
- *
- * @author Hyrex
- */
+ 
 public class Audit_details extends javax.swing.JFrame {
 Connection conn=null;
 ResultSet rs=null;
 PreparedStatement pst=null;
-    /**
-     * Creates new form Audit_details
-     */
+   
     public Audit_details() {
         design();
         conn=db.java_db();
@@ -273,17 +264,9 @@ PreparedStatement pst=null;
 
     private void txt_searchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_searchActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txt_searchActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
+    } 
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+       
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -313,13 +296,11 @@ PreparedStatement pst=null;
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTable tbl_3;
     private javax.swing.JTextField txt_search;
-    // End of variables declaration//GEN-END:variables
-}
+ }
