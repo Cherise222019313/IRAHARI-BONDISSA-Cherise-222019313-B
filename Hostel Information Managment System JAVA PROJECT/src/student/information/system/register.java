@@ -15,17 +15,13 @@ import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
 
 
-/**
- *
- * @author HP
- */
+ 
 public class register extends javax.swing.JFrame {
 
     Connection conn=null;
    ResultSet rs=null;
    PreparedStatement pst=null;
-   // private final Connection conn;
- 
+  
     public register() {
         initComponents();
         conn=db.java_db();
@@ -303,8 +299,7 @@ public class register extends javax.swing.JFrame {
 
     private void txt_emailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_emailActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txt_emailActionPerformed
-
+    } 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
 if(txt_fname.getText().isEmpty() ||txt_lname.getText().isEmpty() ||txt_dob.getText().isEmpty() || txt_email.getText().isEmpty()){
             
@@ -319,8 +314,7 @@ else{
             String sql ="insert into student   values (null,?,?,?,?,?,?,?,?,?) ";
 
             pst=conn.prepareStatement(sql);
-           // pst.setString(1,txt_id.getText());
-            pst.setString(1,txt_fname.getText());
+             pst.setString(1,txt_fname.getText());
             pst.setString(2,txt_lname.getText());
             pst.setString(3,txt_dob.getText());
             pst.setString(4,(String)gender.getSelectedItem()); 
